@@ -16,10 +16,10 @@ public class BankLoginTest {
     void tearDown() {
         cleanAuthCodes();
     }
-    /*@AfterAll
+    @AfterAll
     static void tearDownAll() {
         cleanDatabase();
-    }*/
+    }
     @BeforeEach
     void setUp() {
         loginPage = open("http://localhost:9999", LoginPage.class);
